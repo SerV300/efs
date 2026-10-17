@@ -1,0 +1,166 @@
+
+[QIPCALL:ImsVoiceConfig]
+
+
+*uriType = 0
+
+
+
+
+*checkForReasonTextForCause200 = 0
+
+[Ut:XCAPCommonHC]
+
+
+*bsfServerAddress = ":80"
+
+
+
+*useGBAMEOnly = 1
+
+
+
+[QIPCALL:ImsMediaProfileConfig]
+
+
+*AudioProfile1 = "EVS_0_106;AMR_1_104;AMR_4_110;AMR_0_102;AMR_2_108"
+
+
+
+
+*VideoProfile1 = "H264_1;H264_2"
+
+[MEDIA:MediaCommon]
+
+
+*mtuSize = 1300
+
+
+
+
+*DLDtmfMode = 1
+
+[Ut:UtConfiguration]
+
+
+*BlockIfNoBSCode = 0
+
+
+
+
+*BlockRequestIfNullRule = 0
+
+[QIPCALL:ImsVoiceSuppsConfig]
+
+
+*presentThirdCalltoUser = 1
+
+
+
+
+*cepNotifyReferTimer = 0
+
+
+*checkCEPUserStateonNotifyTimerExpiry = 1
+
+[SIPConfig:GeoLocation]
+
+
+*iEnableCellInfoInPANI = 1
+
+
+[Registration:RegistrationSettings]
+
+
+*enableRegistrationInLPM = 2
+
+
+
+
+[SILENTREDIAL_OVERRIDE]
+0 ^ 1 = SIP_ERROR_380
+0 ^ 1 = SIP_ERROR_500
+0 ^ 1 = SIP_ERROR_503
+0 ^ 1 = SIP_ERROR_504
+1 ^ 1 = SIP_ERROR_380
+1 ^ 1 = SIP_ERROR_500
+1 ^ 1 = SIP_ERROR_503
+1 ^ 1 = SIP_ERROR_504
+[SILENTREDIAL_OVERRIDE_END]
+
+
+
+[QIPCALL:ImsVoiceSrvccConfig]
+
+
+*midcallSrvccEnabled = 1
+
+
+
+
+
+[QIPCALL:ImsVideoConfig]
+
+
+*vtImpactedByDataSetting = 0
+
+
+
+
+
+[QIPCALL:ImsVoWifiConfig]
+
+
+*EnableOnDemandDPDCheckOnWiFiMidCallInactivityTimeOut = 1
+
+*MidCallConnectivityTimer = 5
+
+
+
+*NRWifiHOConfig_Home_Idle = 0
+
+
+
+
+
+[Registration:RegistrationTimers]
+
+
+
+*PDNBringUpDelay = 0
+
+
+
+
+
+[ISH:ConnectivityParams]
+
+
+*IsVoWifiEnabled = 1
+
+
+
+
+
+[QIPCALL:ImsVoiceConfigExt]
+
+
+*EPSFallbackMTTimer = 5000
+
+
+
+
+[Registration:RegistrationFeatureFlags]
+
+
+*enableDynamicUpdateOfT2 = 0
+
+
+
+
+[QIPCALL:ImsVoiceQoSConfig]
+
+
+*allowMediaOnDefaultBearer = 1
+
+
